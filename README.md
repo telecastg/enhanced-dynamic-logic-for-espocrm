@@ -31,19 +31,21 @@ Usage Instructions:
 
 1) To use User attributes as condition for a dynamic logic action, you must use the following enhanced condition types in your clientDefs:
 
-"enhancedVisible" instead of "visible"
+  "enhancedVisible" instead of "visible"
 
-"enhancedReadOnly" instead of "readOnly"
+  "enhancedReadOnly" instead of "readOnly"
 
-"enhancedRequired" instead of "required"
+  "enhancedRequired" instead of "required"
 
-2) To specify css attributed for a field, which will affect list and detail displays, use the enhanced condition type "conditionalCss"
+2) To specify css attributes for a field, which will affect list and detail displays, use the enhanced condition type "conditionalCss"
 
-3) See the example clientDefs file extract for an entity which contains a field called tenantName and which we want to specify the following dynamic logic directives:
+3) See the example clientDefs file extract for an entity which contains a field called tenantName and for which we want to specify the following dynamic logic directives:
 
- a) Make the field readonly if the entity "status" field value is either "Completed" or "Canceled".
- b) Change the text and backgorund colors of the field text depending on the value of the "isPriority" field.
- c) Make the field visible if the user is either a Portal User or the user is not a member of the "Management" team.
+  a) Make the field readonly if the entity "status" field value is either "Completed" or "Canceled".
+  
+  b) Change the text and backgorund colors of the field text depending on the value of the "isPriority" field.
+  
+  c) Make the field visible if the user is either a Portal User or the user is not a member of the "Management" team.
 
     "dynamicLogic": {
     

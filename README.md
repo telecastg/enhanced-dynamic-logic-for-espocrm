@@ -99,4 +99,5 @@ Usage Instructions:
         
     }
 
+WARNING: If you are using the enhanced dynamic logic module DO NOT modify any conditions using the Administration panel becasue this will reset the enhanced dynamic logic directives in the entity's clientDefs metadada.
 

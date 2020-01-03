@@ -37,7 +37,7 @@ Usage Instructions:
 
   "enhancedRequired" instead of "required"
 
-2) To specify css attributes for a field, which will affect list and detail displays, use the enhanced condition type "conditionalCss"
+2) To specify css attributes for a field, which will affect both the list and detail displays, use the enhanced condition type "conditionalCss"
 
 3) See the example clientDefs file extract for an entity which contains a field called tenantName and for which we want to specify the following dynamic logic directives:
 
@@ -108,8 +108,7 @@ Usage Instructions:
                             ]    
                         }
                     ]
-                },
-                "required": null
+                }
             },
         }
         

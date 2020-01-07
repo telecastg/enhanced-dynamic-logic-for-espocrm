@@ -1,5 +1,5 @@
 # enhanced-dynamic-logic-for-espocrm
-Enhanced Dynamic Logic capabilities for EspoCRM. Allows changes to a field CSS based on Dynamic Logic conditions and allows to use a current User properties to trigger Dynamic Logic changes.
+Enhanced Dynamic Logic capabilities for EspoCRM. Allows changes to a field CSS based on Dynamic Logic conditions and allows to use a current User properties (isAdmin, isPortal, Team membership or role) to trigger Dynamic Logic changes.
 
 Installation Instructions:
 
@@ -45,7 +45,7 @@ Usage Instructions:
   
   b) Change the text and backgorund colors of the field text depending on the value of the "isPriority" field.
   
-  c) Make the field visible if the user is either a Portal User or the user is not a member of the "Management" team.
+  c) Make the field visible if the user is either a Portal User or the user is not a member of the "Management" team or the user has role "Test User"
 
     "dynamicLogic": {
     
@@ -104,6 +104,11 @@ Usage Instructions:
                                     "type": "isFalse",
                                     "userAttribute": "isMember",
                                     "userValue": "Management"
+                                },
+                                 {
+                                    "type": "isTrue",
+                                    "userAttribute": "isRole",
+                                    "userValue": "Test User"
                                 }
                             ]    
                         }
